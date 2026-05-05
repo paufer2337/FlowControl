@@ -9,7 +9,7 @@ namespace FlowControl
     internal class Menu
     {
 
-        
+        private readonly Cinema _cinema = new Cinema();
 
         public void Start()
         {
@@ -36,11 +36,11 @@ namespace FlowControl
                         Console.WriteLine("Programmet avslutas.");
                         break;
 
-                    /*case "1":
-                        UngdomEllerPensionar();
+                    case "1":
+                        _cinema.UngdomEllerPensionar();
                         break;
 
-                    case "2":
+                    /*case "2":
                         PrisForSallskap();
                         break;
 
