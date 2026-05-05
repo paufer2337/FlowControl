@@ -10,6 +10,7 @@ namespace FlowControl
     {
 
         private readonly Cinema _cinema = new Cinema();
+        private readonly TextLoop _txtLoop = new TextLoop();
 
         public void Start()
         {
@@ -40,17 +41,17 @@ namespace FlowControl
                         _cinema.UngdomEllerPensionar();
                         break;
 
-                    /*case "2":
-                        PrisForSallskap();
+                    case "2":
+                        _cinema.PrisForSallskap();
                         break;
 
                     case "3":
-                        UpprepaTioGanger();
+                        _txtLoop.UpprepaTioGanger();
                         break;
 
                     case "4":
-                        DetTredjeOrdet();
-                        break;*/
+                        _txtLoop.DetTredjeOrdet();
+                        break;
 
                     default:
                         Console.WriteLine("Felaktig input, välj 0-4.");
