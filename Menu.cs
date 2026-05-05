@@ -57,7 +57,7 @@ namespace FlowControl
                         Console.WriteLine("Felaktig input, välj 0-4.");
                         break;
                 }
-
+            
                 Console.WriteLine();
                 ConsoleHelper.PressToContinue();
             }

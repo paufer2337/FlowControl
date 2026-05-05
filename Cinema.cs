@@ -7,16 +7,14 @@ namespace FlowControl
 
         public void UngdomEllerPensionar()
         {
-            Console.Write("Ange ålder: ");
-            string? input = Console.ReadLine();
-
-            if (!int.TryParse(input, out int alder))    // Jämför med int.Parse(input) --> "hej" --> Exception
+            
+            int alder = ConsoleHelper.ValidAge("Ange ålder: ");
+            
+            if (alder < 5 || alder > 100)
             {
-                Console.WriteLine("Ogiltig ålder.");
-                return;
+                Console.WriteLine("Gratis inträde!");
             }
-
-            if (alder < 20)
+            else if (alder < 20)
             {
                 Console.WriteLine("Ungdomspris: 80kr");
             }
@@ -32,14 +30,8 @@ namespace FlowControl
 
         public void PrisForSallskap()
         {
-            Console.Write("Hur många personer är ni? ");
-            string? antalInput = Console.ReadLine();
-
-            if (!int.TryParse(antalInput, out int antal) || antal <= 0)
-            {
-                Console.WriteLine("Ogiltigt antal personer.");
-                return;
-            }
+            
+            int antal = ConsoleHelper.Gruppstorlek("Hur många personer är ni? ");
 
             int total = 0;
 
