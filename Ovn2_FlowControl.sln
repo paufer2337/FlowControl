@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ovn2_FlowControl", "Ovn2_FlowControl.csproj", "{27BA04F1-B3DE-E4B9-4776-A0B96DC82241}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27BA04F1-B3DE-E4B9-4776-A0B96DC82241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27BA04F1-B3DE-E4B9-4776-A0B96DC82241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27BA04F1-B3DE-E4B9-4776-A0B96DC82241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27BA04F1-B3DE-E4B9-4776-A0B96DC82241}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {920B29C3-CC42-478B-AFA4-071558E372CA}
+	EndGlobalSection
+EndGlobal
